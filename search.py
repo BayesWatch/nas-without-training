@@ -153,5 +153,5 @@ state = {'accs': acc,
          }
 
 dset = args.dataset if not args.trainval else 'cifar10-valid'
-fname = f"{args.save_loc}/{dset}_{args.n_runs}_{args.n_samples}_{args.mc_samples}_{args.alpha}_{args.seed}.t7"
+fname = f"{args.save_loc}/{dset}_{args.n_runs}_{args.n_samples}_{args.seed}.t7"
 torch.save(state, fname)

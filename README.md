@@ -13,4 +13,10 @@ conda activate nas-wot
 ./reproduce.sh
 ```
 
+Will produce the following table:
+
+| Method       |   Search time (s) | CIFAR-10 (val)   | CIFAR-10 (test)   | CIFAR-100 (val)   | CIFAR-100 (test)   | ImageNet16-120 (val)   | ImageNet16-120 (test)   |
+|:-------------|------------------:|:-----------------|:------------------|:------------------|:-------------------|:-----------------------|:------------------------|
+| Ours (N=100) |             18.35 | 89.18 +- 0.29    | 91.76 +- 1.28     | 67.17 +- 2.79     | 67.27 +- 2.68      | 40.84 +- 5.36          | 41.33 +- 5.74           |
+
 The code is licensed under the MIT licence.
