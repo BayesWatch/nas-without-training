@@ -12,3 +12,5 @@ conda env create -f environment.yml
 conda activate nas-wot
 ./reproduce.sh
 ```
+
+The code is licensed under the MIT licence.
