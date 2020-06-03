@@ -51,5 +51,4 @@ dependencies:
   - pip:
     - argparse==1.4.0
     - nas-bench-201==1.3
-prefix: /home/jturner/miniconda3/envs/nas-wot
-
+    - tabulate==0.8.7

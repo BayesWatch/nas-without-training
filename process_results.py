@@ -63,25 +63,25 @@ for n_samples in [10, 100]:
         full_scores = torch.load(filename)
         if dataset == 'CIFAR-10 (test)':
             time = median(full_scores['times'])
-            dataset_top1s['Search time (s)'] = time
+            time = f"{time:.2f}"
         accs = []
         for n in range(args.n_runs):
             acc = full_scores[acc_type][n]
             accs.append(acc)
         dataset_top1s[dataset] = accs
 
-    cifar10_val  = f"{mean(dataset_top1s['CIFAR-10 (val)']):.2f} $\pm$ {std(dataset_top1s['CIFAR-10 (val)']):.2f}"
-    cifar10_test = f"{mean(dataset_top1s['CIFAR-10 (test)']):.2f} $\pm$ {std(dataset_top1s['CIFAR-10 (test)']):.2f}"
+    cifar10_val  = f"{mean(dataset_top1s['CIFAR-10 (val)']):.2f} +- {std(dataset_top1s['CIFAR-10 (val)']):.2f}"
+    cifar10_test = f"{mean(dataset_top1s['CIFAR-10 (test)']):.2f} +- {std(dataset_top1s['CIFAR-10 (test)']):.2f}"
 
-    cifar100_val  = f"{mean(dataset_top1s['CIFAR-100 (val)']):.2f} $\pm$ {std(dataset_top1s['CIFAR-100 (val)']):.2f}"
-    cifar100_test = f"{mean(dataset_top1s['CIFAR-100 (test)']):.2f} $\pm$ {std(dataset_top1s['CIFAR-100 (test)']):.2f}"
+    cifar100_val  = f"{mean(dataset_top1s['CIFAR-100 (val)']):.2f} +- {std(dataset_top1s['CIFAR-100 (val)']):.2f}"
+    cifar100_test = f"{mean(dataset_top1s['CIFAR-100 (test)']):.2f} +- {std(dataset_top1s['CIFAR-100 (test)']):.2f}"
 
-    imagenet_val  = f"{mean(dataset_top1s['ImageNet16-120 (val)']):.2f} $\pm$ {std(dataset_top1s['ImageNet16-120 (val)']):.2f}"
-    imagenet_test = f"{mean(dataset_top1s['ImageNet16-120 (test)']):.2f} $\pm$ {std(dataset_top1s['ImageNet16-120 (test)']):.2f}"
+    imagenet_val  = f"{mean(dataset_top1s['ImageNet16-120 (val)']):.2f} +- {std(dataset_top1s['ImageNet16-120 (val)']):.2f}"
+    imagenet_test = f"{mean(dataset_top1s['ImageNet16-120 (test)']):.2f} +- {std(dataset_top1s['ImageNet16-120 (test)']):.2f}"
 
     df.append([method, time, cifar10_val, cifar10_test, cifar100_val, cifar100_test, imagenet_val, imagenet_test])
 
 
 df = pd.DataFrame(df, columns=['Method','Search time (s)','CIFAR-10 (val)','CIFAR-10 (test)','CIFAR-100 (val)','CIFAR-100 (test)','ImageNet16-120 (val)','ImageNet16-120 (test)' ])
-df.round(2)
+
 print(tabulate.tabulate(df.values,df.columns, tablefmt="pipe"))
