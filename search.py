@@ -39,6 +39,7 @@ torch.manual_seed(args.seed)
 
 import torchvision.transforms as transforms
 from datasets import get_datasets
+from config_utils import load_config
 from nas_201_api import NASBench201API as API
 
 def get_batch_jacobian(net, x, target, to, device, args=None):
