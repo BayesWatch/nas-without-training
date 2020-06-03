@@ -54,7 +54,7 @@ def get_batch_jacobian(net, x, target, to, device, args=None):
     return jacob, target.detach()
 
 
-def evidenceapprox_eval_score(jacob, labels=None):
+def eval_score(jacob, labels=None):
     corrs = np.corrcoef(jacob)
     v, _  = np.linalg.eig(corrs)
     k = 1e-5
@@ -121,7 +121,7 @@ for N in runs:
         jacobs = jacobs.reshape(jacobs.size(0), -1).cpu().numpy()
 
         try:
-            s = evidenceapprox_eval_score(jacobs, labels)
+            s = eval_score(jacobs, labels)
         except Exception as e:
             print(e)
             s = np.nan
