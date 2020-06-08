@@ -41,6 +41,6 @@ Note that search times may vary from the reported result owing to hardware setup
 
 The code is licensed under the MIT licence.
 
-# Acknowledgements
+## Acknowledgements
 
 This repository makes liberal use of code from the [AutoDL](https://github.com/D-X-Y/AutoDL-Projects) library. We also rely on [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201).
