@@ -1,6 +1,6 @@
-# Neural Architecture Search Without Training
+# [Neural Architecture Search Without Training](https://arxiv.org/abs/2006.04647)
 
-This repository contains code for replicating our paper on NAS without training. 
+This repository contains code for replicating our paper, [NAS Without Training](https://arxiv.org/abs/2006.04647). 
 
 ## Setup 
 
