@@ -44,3 +44,18 @@ The code is licensed under the MIT licence.
 ## Acknowledgements
 
 This repository makes liberal use of code from the [AutoDL](https://github.com/D-X-Y/AutoDL-Projects) library. We also rely on [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201).
+
+## Citing us 
+
+If you use or build on our work, please consider citing us:
+
+```
+@misc{mellor2020neural,
+    title={Neural Architecture Search without Training},
+    author={Joseph Mellor and Jack Turner and Amos Storkey and Elliot J. Crowley},
+    year={2020},
+    eprint={2006.04647},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+```
