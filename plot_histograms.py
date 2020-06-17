@@ -60,7 +60,7 @@ def decide_plot(acc, plt_cts, num_rows, boundaries=[60., 70., 80., 90.]):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Plot histograms of correlation matrix')
     parser.add_argument('--data_loc', default='../datasets/cifar/', type=str, help='dataset folder')
-    parser.add_argument('--api_loc', default='../datasets/NAS-Bench-201-v1_1-096897.pth',
+    parser.add_argument('--api_loc', default='NAS-Bench-201-v1_1-096897.pth',
                     type=str, help='path to API')
     parser.add_argument('--arch_start', default=0, type=int)
     parser.add_argument('--arch_end', default=15625, type=int)

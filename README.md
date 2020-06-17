@@ -1,6 +1,6 @@
-# Neural Architecture Search Without Training
+# [Neural Architecture Search Without Training](https://arxiv.org/abs/2006.04647)
 
-This repository contains code for replicating our paper on NAS without training.
+This repository contains code for replicating our paper, [NAS Without Training](https://arxiv.org/abs/2006.04647).
 
 ## Setup
 
@@ -35,7 +35,7 @@ Each command will finish by calling `process_results.py`, which will print a tab
 | Ours (N=100) |          17.4139  | 88.45 +- 1.46    | 91.61 +- 1.71     | 66.42 +- 3.27     | 66.56 +- 3.28      | 36.56 +- 6.70          | 36.37 +- 6.97
 
 
-To try different sample sizes, simply change the `--n_samples` argument in the call to `search.py`, and update the list of sample sizes on line 51 of `process_results.py`.
+To try different sample sizes, simply change the `--n_samples` argument in the call to `search.py`, and update the list of sample sizes [this line](https://github.com/BayesWatch/nas-without-training/blob/master/process_results.py#L51) of `process_results.py`.
 
 Note that search times may vary from the reported result owing to hardware setup.
 
@@ -56,3 +56,18 @@ The code is licensed under the MIT licence.
 ## Acknowledgements
 
 This repository makes liberal use of code from the [AutoDL](https://github.com/D-X-Y/AutoDL-Projects) library. We also rely on [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201).
+
+## Citing us
+
+If you use or build on our work, please consider citing us:
+
+```
+@misc{mellor2020neural,
+    title={Neural Architecture Search without Training},
+    author={Joseph Mellor and Jack Turner and Amos Storkey and Elliot J. Crowley},
+    year={2020},
+    eprint={2006.04647},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+```
