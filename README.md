@@ -1,8 +1,8 @@
 # Neural Architecture Search Without Training
 
-This repository contains code for replicating our paper on NAS without training. 
+This repository contains code for replicating our paper on NAS without training.
 
-## Setup 
+## Setup
 
 1. Download the [datasets](https://drive.google.com/drive/folders/1L0Lzq8rWpZLPfiQGd6QR8q5xLV88emU7).
 2. Download [NAS-Bench-201](https://drive.google.com/file/d/1OOfVPpt-lA4u2HJrXbgrRd42IbfvJMyE/view).
@@ -10,7 +10,7 @@ This repository contains code for replicating our paper on NAS without training.
 
 We also refer the reader to instructions in the official [NASBench-201 README](https://github.com/D-X-Y/NAS-Bench-201).
 
-## Reproducing our results 
+## Reproducing our results
 
 To reproduce our results:
 
@@ -38,6 +38,18 @@ Each command will finish by calling `process_results.py`, which will print a tab
 To try different sample sizes, simply change the `--n_samples` argument in the call to `search.py`, and update the list of sample sizes on line 51 of `process_results.py`.
 
 Note that search times may vary from the reported result owing to hardware setup.
+
+
+## Plotting histograms
+
+In order to plot the histograms in Figure 1 of the paper, run:
+
+```
+python plot_histograms.py
+```
+to produce:
+
+![alt text](results/histograms_cifar10val_batch256.png)
 
 The code is licensed under the MIT licence.
 
