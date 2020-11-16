@@ -62,7 +62,7 @@ This repository makes liberal use of code from the [AutoDL](https://github.com/D
 
 If you use or build on our work, please consider citing us:
 
-```
+```bibtex
 @misc{mellor2020neural,
     title={Neural Architecture Search without Training},
     author={Joseph Mellor and Jack Turner and Amos Storkey and Elliot J. Crowley},
