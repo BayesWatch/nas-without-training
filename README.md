@@ -1,6 +1,7 @@
 # Neural Architecture Search Without Training 
 
 > :warning: Note: this repository has been updated to reflect the second version of the paper to appear on arXiv 1 March. :warning:
+> For the original version, refer to the [version v1.0](https://github.com/BayesWatch/nas-without-training/releases/tag/v1.0).
 
 ## Usage 
 
