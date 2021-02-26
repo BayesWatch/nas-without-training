@@ -55,4 +55,4 @@ class TinyNetwork(nn.Module):
     out = out.view(out.size(0), -1)
     logits = self.classifier(out)
 
-    return out, logits
+    return logits, out
