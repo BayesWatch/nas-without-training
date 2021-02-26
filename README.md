@@ -1,6 +1,6 @@
 # Neural Architecture Search Without Training 
 
-> :warning: Note: this repository has been updated to reflect the second version of the paper to appear on arXiv 1 March. :warning
+> :warning: Note: this repository has been updated to reflect the second version of the paper to appear on arXiv 1 March. :warning:
 
 ## Usage 
 
