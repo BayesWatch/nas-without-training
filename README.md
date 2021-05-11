@@ -36,6 +36,6 @@ If you use or build on our work, please consider citing us:
     title={Neural Architecture Search without Training},
     author={Joseph Mellor and Jack Turner and Amos Storkey and Elliot J. Crowley},
     year={2021},
-	booktitle={International Conference on Machine Learning}
+    booktitle={International Conference on Machine Learning}
 }
 ```
