@@ -32,12 +32,10 @@ The code is licensed under the MIT licence.
 If you use or build on our work, please consider citing us:
 
 ```bibtex
-@misc{mellor2020neural,
+@inproceedings{mellor2021neural,
     title={Neural Architecture Search without Training},
     author={Joseph Mellor and Jack Turner and Amos Storkey and Elliot J. Crowley},
-    year={2020},
-    eprint={2006.04647},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+    year={2021},
+	booktitle={International Conference on Machine Learning}
 }
 ```
